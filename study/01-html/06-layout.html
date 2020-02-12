@@ -1,45 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>layout</title>
+    <style>
+        #Wrap {}
+
+        .wrap {
+            border: 5px solid gray;
+        }
+
+        .header {
+            background: lightpink;
+        }
+
+        .container {
+            background: lightpink;
+        }
+
+        .contents {
+            background: #ffe0e5;
+        }
+
+        aside {
+            background: #fdeff2;
+        }
+
+        footer {
+            background: lightpink;
+        }
+
+        h1 {
+            background: #ffe0e5;
+        }
+
+        address {
+            background: #ffe0e5;
+        }
+
+        .copyright {
+            background: #ffe0e5;
+        }
+    </style>
 </head>
+
 <body>
-<div class="wrap">
-    <header>
-        헤더
-        <h1>로고</h1>
-        <nav>
-            네비게이션
-        </nav>
-    </header>
-    <div class="container">
-       컨테이너
-        <article class="contents">
-            컨텐츠
-            <section>
-               <header>
-                <h2>쇼핑(섹션주제)</h2>
-               </header>
-                <div class="cont">
-                    섹션 내용
-                </div>
-                <footer></footer>
-            </section>
-            
-            <section>
-               <header>
-                <h2>쇼핑(섹션주제)</h2>
-               </header>
-                <div class="cont">
-                    섹션 내용
-                </div>
-                <footer></footer>
-            </section>
-        </article>
-        <aside>어사이드</aside>
+    <div id="Wrap" class="wrap">
+        <header class="header">
+            <h1><a href="#">로고</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                    <li><a href="#">메뉴4</a></li>
+                    <li><a href="#">메뉴5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="contents">
+                <section>
+                    <header>
+                        <h2>컨텐츠 그룹1</h2>
+                    </header>
+                    <div class="cont">
+                        컨텐츠 내용
+                    </div>
+                    <footer></footer>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>컨텐츠 그룹2</h2>
+                    </header>
+                    <div class="cont">
+                        컨텐츠 내용
+                    </div>
+                    <footer></footer>
+                </section>
+
+                <articel>
+                    <h2>주요 기사</h2>
+                </articel>
+            </div>
+            <aside>어사이드</aside>
+        </div>
+        <footer>
+            <h1><a href="#">로고</a></h1>
+            <address>
+                경기도 부천시 상동로 메가플러스 <br>
+                <a href="tel:032-2225-5442">032-2225-5442</a> <br>
+                <a href="mailto:eehd@naver.com">eehd@naver.com</a>
+            </address>
+            <p class="copyright">
+                Copyright &#169; NAVER Corp.
+            </p>
+
+        </footer>
+
+
+
+
+
+
+
     </div>
-    <footer>풋터</footer>
-</div>
 </body>
+
 </html>
