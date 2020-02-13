@@ -8,31 +8,53 @@
         #Wrap {}
 
         .wrap {
+            padding: 10px;
             border: 5px solid gray;
         }
 
         .header {
+            display: flex;
             background: lightpink;
+        }
+        nav > ul {
+            display: flex;
         }
 
         .container {
+            display: flex;
+            margin: 10px 0;
             background: lightpink;
         }
 
         .contents {
+            width: 70%;
             background: #ffe0e5;
+        }
+        .contents section {
+            border: 1px solid red;
+        }
+        .contents article {
+            display: block;
+            border: 1px solid blue;
         }
 
         aside {
+            width: 30%;
             background: #fdeff2;
         }
 
         footer {
+            display: flex;
             background: lightpink;
         }
 
         h1 {
+            width: 30%;
             background: #ffe0e5;
+        }
+        
+        .col-right {
+            width: 70%;
         }
 
         address {
@@ -81,23 +103,24 @@
                     <footer></footer>
                 </section>
 
-                <articel>
+                <article>
                     <h2>주요 기사</h2>
-                </articel>
+                </article>
             </div>
             <aside>어사이드</aside>
         </div>
         <footer>
             <h1><a href="#">로고</a></h1>
-            <address>
-                경기도 부천시 상동로 메가플러스 <br>
-                <a href="tel:032-2225-5442">032-2225-5442</a> <br>
-                <a href="mailto:eehd@naver.com">eehd@naver.com</a>
-            </address>
-            <p class="copyright">
-                Copyright &#169; NAVER Corp.
-            </p>
-
+            <div class="col-right">
+                <address>
+                    경기도 부천시 상동로 메가플러스 <br>
+                    <a href="tel:032-2225-5442">032-2225-5442</a> <br>
+                    <a href="mailto:eehd@naver.com">eehd@naver.com</a>
+                </address>
+                <p class="copyright">
+                    Copyright &#169; NAVER Corp.
+                </p>
+            </div>   
         </footer>
 
 
