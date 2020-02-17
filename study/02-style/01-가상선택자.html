@@ -74,6 +74,7 @@ h3[class] {color: blue;}
     <hr>
 <!--  가상요소 선택자  -->
 <style>
+/*
     .box {
         display: flex;
     }
@@ -81,7 +82,52 @@ h3[class] {color: blue;}
         width: 20%;
         background: lightpink;
         margin-right: 5%;
+        text-align: center;
     }
+    .box p:hover {
+        background: blue;
+        color: #fff;
+    }
+    .box p:active {
+        background: green;
+    }
+*/
+    .box p:first-child {
+        color: blue;
+    }
+    .box p:last-child {
+        color: red;
+    }
+    .box p:nth-child(2) {
+        color: green;
+    }
+    .box p:first-child:first-letter {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .box::before {
+        content: '가상선택자-앞';
+    }
+    .box::after {
+        content: '가상선택자-뒤';
+    }
+    
+    .box p:nth-child(2)::before {
+        content: '';
+        display: inline-block;
+        width: 20px;height: 20px;
+        background: red;
+    }
+    .box p:last-child::after {
+        content: '';
+        display: inline-block;
+        width: 20px;height: 20px;
+        background: red;
+    }
+    
+    
+    
 </style>
     <div class="box">
       <p>COMPANY</p>
@@ -89,6 +135,8 @@ h3[class] {color: blue;}
       <p>SERVICE</p>
       <p>COMMUNITY</p>
    </div>
+   
+   <br><br><br><br><br><br><br><br><br><br><br><br>
    <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
