@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="ko"> 
 <head> 
 <meta charset="utf-8">
 <title>선택자</title>   
 <style type="text/css">  
+/*
+    * {color: #333;}
+    p {color: blue;}
+    #txt {color: red;}
+    .txt {color: green;}
+    h3.tit {font-size: 50px;}
+*/
     
+    /* ul의 자식 li만 선택 (자손X)*/
+/*
+    .selector ul > li {color: tomato;}
+    
+    h3 + p {background: lightpink;}
+    
+    .selector h3, .selector ul li {
+        background: lightgray;
+    }
+*/
 </style> 
 </head> 
 <body>
@@ -21,7 +37,24 @@
 	</ul>
 	<p>9월에는 가을 이벤트가 시작됩니다</p>
   </div>   
-  
+  <hr>
+<style>
+/* 속성 선택자 */
+/* class 포함된 요소 */
+h3[class] {color: blue;}
+    p[class="icox"] {color: red;}
+/* class명이 유일하게 'icox'이거나 여러 개의 class명 중 하나가 'icox'인 p요소*/
+    p[class~="icox"] {color: green;}
+/* class명이 'icox'이거나 'icox-'로 시작하는 p요소 */
+    p[class|="icox"] {color: gray;}
+/* class명이 철자 'icox'로 시작하는 p요소 */ 
+    p[class^="icox"] {color: #ffc70e;}
+/* class명이 철자 'icox'로 끝나는 p요소 */ 
+    p[class$="icox"] {color: #6486d3;}
+/* class명이 철자 'icox'가 포함되어 있는 p요소 */ 
+    p[class*="icox"] {color: #c664d3;}
+    
+</style>
 <!-- 속성선택자  -->
     <h3 class="logo">서울특별시</h3>
     <h3>경기도</h3>
@@ -38,88 +71,24 @@
         <li><a href="#">제품</a></li>
     </ul>     
     
-    
+    <hr>
 <!--  가상요소 선택자  -->
+<style>
+    .box {
+        display: flex;
+    }
+    .box p {
+        width: 20%;
+        background: lightpink;
+        margin-right: 5%;
+    }
+</style>
     <div class="box">
       <p>COMPANY</p>
       <p>PRODUCT</p>
       <p>SERVICE</p>
       <p>COMMUNITY</p>
    </div>
+   <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
-=======
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>selector</title>
-<link rel="stylesheet" href="./dist/css/comm.css">
-<style>
-    #logo {
-        font-size: 50px;
-        color: dodgerblue;
-    }
-    .txt {
-        color: #333;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    ul.lst-nav {
-        padding: 10px;
-        background: Brown;
-    }
-    ul.lst-nav > li {
-        background: green;
-    }
-    
-    ul > li > ul > li {
-        background: AliceBlue;
-    }
-    
-    ul ul li {
-        border: 1px solid #fff;
-    }
-    
-</style>
-</head>
-<body>
-
-<h1 id="logo">selector</h1>    
-<p class="txt">css를 선택하는 방법</p>
-
-<ul class="lst-nav">
-    <li>
-        <a href="#">메뉴1</a>
-        <ul>
-            <li>메뉴1-1</li>
-            <li>메뉴1-2</li>
-            <li>메뉴1-3</li>
-        </ul>
-    </li>
-    <li>
-        <a href="#">메뉴2</a>
-        <ul>
-            <li>메뉴2-1</li>
-            <li>메뉴2-2</li>
-            <li>메뉴2-3</li>
-        </ul>
-    </li>
-    <li>
-        <a href="#">메뉴3</a>
-        <ul>
-            <li>메뉴3-1</li>
-            <li>메뉴3-2</li>
-            <li>메뉴3-3</li>
-        </ul>
-    </li>
-</ul>
-
-
-
-
-
-
-
-</body>
-</html>
->>>>>>> c6e4b4a57d472972dbdd8507b6f761bc12fca73c
