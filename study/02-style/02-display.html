@@ -4,7 +4,30 @@
 <meta charset="utf-8">
 <title>블록과 인라인</title> 
 <style type="text/css">
+    * {
+        list-style: none;
+    }
+    .gnb li {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background: tomato;
+        text-align: center;
+        margin: 10px;
+    }
+    .gnb a {
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: red;
+    }
+    .gnb li:last-child {
+        display: none;
+    }
     
+    .gnb li:hover {
+        display: none;
+    }
     
     
 </style>

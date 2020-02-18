@@ -3,8 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>font</title> 
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR&display=swap" rel="stylesheet">
 <style type="text/css"> 
-        
+    * {
+        margin: 0;padding: 0;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.5;
+        text-decoration: none;
+/*        list-style: none;*/
+        box-sizing: border-box;
+    }  
 
 </style> 
 </head> 
@@ -41,6 +50,16 @@
 
 
     <!--  폰트 단위 -->
+    <hr>
+    <h2>폰트 단위</h2>
+    <style>
+        p.bold {
+            width: 100vw;
+            height: 100vh;
+            background: tomato;
+            text-align: right;
+        } 
+    </style>
     <h3>하나이빈후과</h3>
     <p class="bold">오늘의 진료는 본관에서 실시합니다.</p>
     <ul>
@@ -63,8 +82,44 @@
     </p>
 
     <!--  웹폰트  -->
-    <p>오늘의 날씨를 말씀드리겠습니다.</p>
+   <hr>
+    <h2>웹폰트</h2>
+    <style>
+    .webfont {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .gt {
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    </style>
+    <p class="webfont">오늘의 날씨를 말씀드리겠습니다.</p>
     <p class="gt">오늘의 날씨를 말씀드리겠습니다.</p>
+    
+    <!--  폰트  -->
+    <hr>
+    <h2>폰트 패밀리</h2>
+    <style>
+        .dotum {
+            font-family: '돋움', dotum, sans-serif;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        .gt2 {
+            font-family: 'a개미야';
+            color: #9d7919;
+            font-weight: normal;
+            font-size: 30px;
+        }
+        .gt2 span {
+            font-size: 0.5em;
+        }
+    </style>
+    <p class="dotum">오늘의 날씨를 말씀드리겠습니다.</p>
+    <p class="gt2">
+        오늘의 날씨를 말씀드리겠습니다.
+        <span>맑음/비옴</span>
+    </p>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
