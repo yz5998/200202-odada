@@ -27,13 +27,24 @@
 <body>
 
     <style>
-
+        .flexbox1 > div:first-child {
+            order:4
+        }
+        .flexbox1 > div:nth-child(2) {
+            order:1
+        }
+        .flexbox1 > div:nth-child(3) {
+            order:3
+        }
+        .flexbox1 > div:last-child {
+            order:2
+        }
     </style>
     <div class="flexbox_g flexbox1">
-        <div style="order:4">1</div>
-        <div style="order:1">2</div>
-        <div style="order:3">3</div>
-        <div style="order:2">4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
     </div>
 
     <style>
