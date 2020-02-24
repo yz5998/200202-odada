@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <title>flexbox</title>
     <style>
-       
+        .flexbox_g {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            border-bottom: 1px solid #000;
+        }
+        .flexbox_g > div {
+            background-color: tomato;
+              width: 100px;
+              margin: 10px;
+              text-align: center;
+              line-height: 75px;
+              font-size: 30px;
+        }
     </style>
 </head>
 
 <body>
 
     <style>
-       
+        .flexbox1 {
+            flex-direction: column;
+        }
     </style>
     <div class="flexbox_g flexbox1">
         <div>1</div>
@@ -21,7 +38,12 @@
     </div>
 
     <style>
-        
+        .flexbox2 {
+            flex-wrap: wrap;
+        }
+        .flexbox2 > div {
+            width: 21%;
+        }
     </style>
     <div class="flexbox_g flexbox2">
         <div>1</div>
