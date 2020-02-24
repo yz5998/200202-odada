@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        ul, li {list-style: none}
+        .clear_g {
+            display: block;
+            overflow: visible;
+            width: auto;
+            clear: both;
+            *zoom: 1
+        }
+
+        .clear_g:after {
+            display: block;
+            visibility: hidden;
+            height: 0;
+            font-size: 0;
+            clear: both;
+            content: ''
+        }
+
+        header {
+            padding: 20px;
+            background: tomato;
+        }
+        
+        h1 {
+            float: left;
+            width: 20%;
+        }
+        nav {
+            float: right;
+            width: 70%;
+        }
+
+        ul {
+            /*            overflow: hidden;*/
+            /*            height: 200px;    */
+/*            background: lightgray;*/
+        }
+
+        ul li {
+            float: left;
+            width: 19%;
+            height: 50px;
+            margin: 0 1% 10px 0;
+            background: blue;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            transition: all .5s;
+        }
+        ul li:hover {
+            height: 80px;
+            background: lightblue;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        section {
+            width: 30%;
+            height: 300px;
+            background: #e2e2e2;
+/*            margin-right: 3.333%;*/
+        }
+        section:first-child {            
+            float: left;
+        }
+        section:nth-child(2) {
+            display: inline-block;
+        }
+        section:last-child {
+            float: right;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="clear_g">
+        <h1>logo</h1>
+        <nav>
+            <ul class="clear_g">
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+                <li>메뉴5</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container clear_g">
+        <section>
+            <h2>로그인</h2>
+        </section>
+        
+        <section>
+            <h2>공지사항</h2>
+        </section>
+        
+        <section>
+            <h2>배너</h2>
+        </section>
+    </div>
+    
+    <footer>
+        <h1>logo</h1>
+        <div class="foot-info">
+            <address>경기도 부천시 상동</address>
+            <div class="copyright">
+                copyright
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+
+</body>
+
+</html>

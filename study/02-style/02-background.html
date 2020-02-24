@@ -10,6 +10,7 @@
         background-image: url(./images/bg_grid.gif);
         background-repeat: repeat;
     }
+/*    */
 </style>
 </head> 
 <body>
@@ -61,7 +62,29 @@
     <hr>
     <!--  background size  -->    
     <style>
-        
+        .who {
+            height: 150px;margin-bottom: 10px;
+            border: 1px solid red;
+            background: url(./images/slide-top.jpg) 0 0 no-repeat;
+        }
+        .who1 {
+            background-size: 500px 150px;
+        }
+        .who2 {
+            background-size: 100% auto;
+        }
+        .who3 {
+            background-size: auto;
+        }
+        .who4 {
+            background-size: contain;
+            /* 짧은 축을 기준으로 꽉 차게 */
+            background-position: 50% 0;
+        }
+        .who5 {
+            background-size: cover;
+            /* 긴 축을 기준으로 꽉 차게 */
+        }
     </style>
     
     <div class="bg_size">
@@ -76,7 +99,10 @@
     <hr>
     <!--  background gradient  -->    
     <style>
-        
+        .bg_gradient {
+            height: 300px;
+            background-image: linear-gradient(-45deg, red , yellow);
+        }
     </style>
     <div class="bg_gradient">
         
