@@ -5,7 +5,19 @@
 <title>ANIMATION</title> 
 <style type="text/css">
     
-    
+    p {
+        width: 100px;height: 100px;
+        padding: 10px;
+        background: firebrick;
+        animation-name: example;
+          animation-duration: 4s;
+        animation-delay: 2s;
+    }
+    @keyframes example {
+        0% {background: firebrick;}
+        50% {background: tomato;}
+        100% {background: forestgreen;}
+    }
     
 </style>
 </head> 
