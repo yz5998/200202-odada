@@ -78,6 +78,31 @@
             float: right;
             margin-right: 0;
         }
+        
+        .row2 {
+/* 부모가 자식의 높이값을 인지하지 못해 */
+/* 1. 높이값을 넣어주거나 */
+/* height: 200px;*/
+/* 2. overflow: hidden;을 적용하거나 */
+/* overflow: hidden;*/
+            
+        }
+/* 3. clear_g 클래스를 추가 */
+        .row2::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        article {
+            width: 45%;height: 200px;
+            background: tomato;
+        }
+        article:first-child {
+            float: left;
+        }
+        article:last-child {
+            float: right;
+        }
     </style>
 </head>
 
@@ -107,6 +132,14 @@
         <section>
             <h2>배너</h2>
         </section>
+    </div>
+    <div class="container row2">
+        <article>
+            <h2>뉴스기사</h2>
+        </article>
+        <article>
+            <h2>best글</h2>
+        </article>
     </div>
     
     <footer>

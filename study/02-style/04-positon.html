@@ -4,7 +4,39 @@
 <meta charset="utf-8">
 <title>POSITION</title> 
 <style type="text/css">
-        
+/* 기본 reset */
+    * {
+        margin: 0; 
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;        
+    }
+    body {
+        background: url(./images/bg_grid.gif) 0 0 repeat;
+    }
+    .box {
+        position: relative;
+        width: 70%;height: 500px;
+        background: rgba(0,0,0,.5);
+        margin: 50px;
+    }
+    .box p {
+        width: 150px;height: 100px;
+    }
+    .box .red {
+        position: absolute;top: 50px;left: 100px;
+        background: red;
+    }
+    .box .green {
+        background: green;
+    }
+    .box .blue {
+        background: blue;
+    }
 </style>
 </head> 
 <body>
