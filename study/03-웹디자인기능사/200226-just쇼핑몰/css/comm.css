@@ -78,7 +78,8 @@ header .nav-depth2 {
     overflow: hidden;
     transition: all .2s;
 }
-header nav:hover .nav-depth2 {
+header nav:hover .nav-depth2, 
+header nav.active .nav-depth2 {
     height: 200px;opacity: 1;
 }
 
@@ -100,7 +101,8 @@ header .nav-depth2 a:hover {
     background: #555;
     transition: all .5s;
 }
-header nav:hover .nav-bg {
+header nav:hover .nav-bg,
+header nav.active .nav-bg {
 /*    display: block;*/
     height: 200px;
     opacity: 1;
@@ -225,6 +227,8 @@ header nav:hover .nav-bg {
 }
 .col1 .on h2 {
     background:#333;
+}
+.col1 .on h2 a {    
     color: #fff;
 }
 .tab-gallery {
