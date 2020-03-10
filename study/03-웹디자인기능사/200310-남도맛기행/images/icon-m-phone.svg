@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="61" viewBox="0 0 71 61">
+    <g fill="none" fill-rule="evenodd" transform="translate(-6 1)">
+        <g fill="#FFC292" transform="scale(-1 1) rotate(-45 16.228 71.749)">
+            <rect width="4.766" height="15.439" x="15.674" y="14.85" rx="2.383" transform="scale(-1 1) rotate(-30 0 89.96)"/>
+            <rect width="4.632" height="24.019" x="13" y="6" rx="2.316" transform="matrix(-1 0 0 1 30.632 0)"/>
+            <rect width="4.632" height="27.019" x="5" y="3" rx="2.316" transform="matrix(-1 0 0 1 14.632 0)"/>
+            <rect width="4.632" height="20.605" x="1" y="8" rx="2.316" transform="matrix(-1 0 0 1 6.632 0)"/>
+            <rect width="4.632" height="27.019" x="9" rx="2.316" transform="matrix(-1 0 0 1 22.632 0)"/>
+            <rect width="17" height="19" x=".996" y="14.675" rx="8.5" transform="matrix(-1 0 0 1 18.991 0)"/>
+            <path d="M15.49 29.816H3.91v10.807h11.58z"/>
+        </g>
+        <rect width="27" height="44" x="26" y="8" fill="#4C4C4C" rx="3"/>
+        <path fill="#FFF" d="M28 12h23v34H28z"/>
+        <path fill="#FF5F00" d="M30 30h19v6H30z"/>
+        <g transform="rotate(-45 62.263 -22.32)">
+            <rect width="4.766" height="15.439" x="3.541" y="16.369" fill="#F1B07D" rx="2.383" transform="rotate(-30 5.924 24.088)"/>
+            <rect width="4.632" height="27.019" x="5.404" fill="#FFC292" rx="2.316"/>
+            <rect width="4.632" height="12.351" x="10.036" y="10.807" fill="#FFC292" rx="2.316"/>
+            <rect width="4.632" height="12.351" x="14.667" y="12.351" fill="#FFC292" rx="2.316"/>
+            <rect width="4.632" height="12.351" x="19.299" y="13.895" fill="#FFC292" rx="2.316"/>
+            <rect width="18.527" height="15.439" x="5.404" y="17.755" fill="#FFC292" rx="7.72"/>
+        </g>
+        <path fill="#FFC292" d="M60.767 52.228l8.187-8.188 7.642 7.642-8.188 8.188z"/>
+        <circle cx="39.5" cy="19.5" r="3.5" fill="#D8D8D8"/>
+        <path fill="#D8D8D8" d="M45 28c0-3.314-2.462-6-5.5-6S34 24.686 34 28"/>
+        <g stroke="#E9CC54" stroke-linecap="round" stroke-width="2">
+            <path d="M55.5 5.5l3.536-3.536M50.5 4.5V.377M57.5 10.5h3"/>
+        </g>
+    </g>
+</svg>
