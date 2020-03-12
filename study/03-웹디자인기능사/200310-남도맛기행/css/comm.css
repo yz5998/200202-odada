@@ -8,6 +8,7 @@
 
 header {
     position: fixed;top: 0;left: 50%;
+    z-index: 9999;
     width: 100%;
     transform: translateX(-50%);
 }
@@ -131,12 +132,15 @@ header .nav-depth2 a:hover {
     font-size: 40px;
     border-bottom: 3px solid #000;
 }
+.container .col-g .cont {
+    width: 980px !important;
+}
 .container .bg-gray {
     background: #eee;
 }
 
 /* bbs */
-.col1 .cont {
+.container .col1 .cont {
     width: 700px;
     margin: auto;
 }
@@ -164,6 +168,83 @@ header .nav-depth2 a:hover {
     margin: 15px 20px 0 0;
     font-size: 20px;
     color: tomato;
+}
+.col2 .cont {
+    position: relative;
+    width: 980px;height: 200px;
+    margin: auto;
+    overflow: hidden;
+}
+.col2 ul {
+    position: absolute;top: 0;left: 0;
+    display: flex;
+    width: 300%;
+}
+.col2 li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.col2 span {
+    position: relative;
+    width: 30%;height: 200px;
+}
+.col2 span::after {
+    content: '';
+    display: block;
+    width: 99.4%;
+    height: 99%;
+    position: absolute;top: 0;left: 0;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.col2 img {
+    width: 100%;
+    height: 200px;
+}
+
+/* banner */
+.container .col3 {
+    padding: 0;
+    background: #cdeff6;
+}
+.col3 h2 {
+    position: absolute;
+    overflow: hidden;
+    width: 0;height: 0;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+}
+.col3 .cont {    
+    position: relative;
+    height: 330px;
+    margin: auto;
+    background:url(../images/banner-middle.png) 100% 100% no-repeat;
+}
+.col3 .ban-txt {
+    position: absolute;top: 50px;left: 0;
+    width: 610px;
+    text-align: left;
+}
+.col3 .ban-txt b {
+    font-size: 22px;
+}
+.col3 .ban-txt p {
+    margin: 10px 0 20px;
+    font-size: 14px;color: #333;
+}
+.col3 .ban-txt a {
+    position: relative;
+    display: inline-block;
+    background: green;
+    padding: 8px 100px 8px 20px;
+    color: #fff;
+    border-radius: 40px;
+}
+.col3 .ban-txt i {
+    position: absolute;top: 20px;right: 20px;
+    color: #fff;
+    font-size: 20px;
 }
 
 footer {
