@@ -35,14 +35,13 @@ $(function(){
             event.preventDefault();
             // .modal-wrap에 on 클래스 추가
             $모달.addClass('on');
-        })
+        });
 
         // #modal의 button을 클릭했을 때
         $모달.find('button').on('click', function(){
             $모달.removeClass('on');
-        })
+        });
 
-    })
+    });
 
-
-})
+});
