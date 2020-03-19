@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,AAAC,CACF,KAAK,CAAE,MAAM,CACb,MAAM,CAAE,IAAI,CACf,AACD,AAAA,MAAM,AAAC,CACH,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,IAAI,CAOnB,AATD,AAGI,MAHE,CAGF,EAAE,AAAC,CACC,KAAK,CAAE,IAAI,CACd,AALL,AAMI,MANE,CAMF,GAAG,AAAC,CACA,KAAK,CAAE,KAAK,CACf",
+    "sources": [
+        "scss/comm.scss"
+    ],
+    "names": [],
+    "file": "comm.min.css"
+}

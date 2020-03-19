@@ -1,0 +1,14 @@
+.wrap {
+    width: 1200px;
+    margin: auto;
+}
+header {
+    height: 50px;
+    background: #eee;
+    h1 {
+        float: left;
+    }
+    nav {
+        float: right;
+    }
+}
