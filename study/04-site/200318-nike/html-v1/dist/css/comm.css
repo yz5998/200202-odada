@@ -48,6 +48,7 @@ nav #gnb {
 }
 
 nav ul > li {
+  position: relative;
   text-align: right;
 }
 
@@ -67,7 +68,35 @@ nav ul > li a {
           transform: skewX(40deg);
 }
 
-nav ul > li ul > li {
-  display: none;
+nav .nav-depth2 {
+  position: absolute;
+  top: -10px;
+  left: 290px;
+  opacity: 0;
+}
+
+nav .nav-depth2 li {
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+  border-bottom: 1px solid #97e031;
+}
+
+nav .nav-depth2 li:hover {
+  background: rgba(151, 224, 49, 0.7);
+}
+
+nav .nav-depth2 li:hover a {
+  color: #000;
+}
+
+nav .nav-depth2 a {
+  display: block;
+  padding: 7px 50px 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+nav #gnb li.on .nav-depth2 {
+  opacity: 1;
 }
 /*# sourceMappingURL=comm.css.map */

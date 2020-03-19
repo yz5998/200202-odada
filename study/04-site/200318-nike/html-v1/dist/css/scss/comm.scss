@@ -43,6 +43,7 @@ nav {
         // margin-top: 130px;
     }
     ul > li {
+        position: relative;
         text-align: right;
         &.on {
             background: #000;
@@ -56,8 +57,28 @@ nav {
             font-size: 20px;
             transform: skewX(40deg);
         }
-        ul > li {
-            display: none;
+    }
+    .nav-depth2 {
+        position: absolute;top: -10px;left: 290px;
+        opacity: 0;
+        li {
+            background: rgba(0,0,0,.7);
+            margin-bottom: 5px;
+            border-bottom: 1px solid #97e031;
+            &:hover {
+                background: rgba(#97e031, .7);
+                a {
+                    color: #000;
+                }
+            }
         }
+        a {
+            display: block;
+            padding: 7px 50px 5px;
+            font-size: 14px;text-align: center;
+        }
+    }
+    #gnb li.on .nav-depth2 {
+        opacity: 1;
     }
 }
