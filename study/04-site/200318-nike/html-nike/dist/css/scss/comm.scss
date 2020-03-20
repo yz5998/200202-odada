@@ -1,16 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url(./reset.css);
 
 // 배경동영상
+// 배경 동영상 꽉 채우기
 .vid {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
+  position: fixed;
+  top: 0;left: 0;
+  width: 100vw;height: 100vh;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  video {
+    position: absolute;
     top: 0;left: 0;
-    video {
-        width: 100%;
-    }
+    height: 100%;
+    border: none;
+  }
 }
+
+.txt-video {
+  width: 340px;
+  height: 280px;
+  position: fixed;
+  top: 200px;
+  right: 70px;
+
+  .txt {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    font-size: 34px;
+    font-family: play;
+    color: #bbb;
+    letter-spacing: -2px;
+  
+    b {
+      font: bold 34px arial;
+      color: #b9fb05;
+      margin-left: 20px;
+    }
+  }
+  
+  .tit {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 160px;
+    color: #b9fb05;
+    font-family: 'Monoton', cursive;
+    letter-spacing: -1px;
+  
+    em {
+      font-size: 50px;
+      font-family: play;
+      color: #fff;
+    }
+  }
+}
+
+
 
 //header 
 header {
@@ -163,6 +211,56 @@ aside {
         }
       }
     }
+
+    
   }
   
-  /* contents내 썸네일 */
+  .btn-ani {
+    position: fixed;bottom: 30px;right: -70px;
+
+    i {
+      position: absolute;bottom: 0;right: 0;
+      opacity: 1;
+      font-size: 70px;color: #97e031;
+      
+      &:first-child {
+        animation: btnAni  1.5s 0s infinite;        
+      }
+      &:nth-child(2) {
+        animation: btnAni  1.5s .5s infinite;        
+      }
+      &:last-child {
+        animation: btnAni  1.5s 1s infinite;        
+      }
+    }
+  }
+
+  @keyframes btnAni {
+    0% {right: 0; transform: scale(1); opacity: 1;}
+    100% {right: 150px; transform: scale(1.5); opacity: 0;}
+  }
+
+  // SNS
+  footer {
+    position: fixed;
+    top: 60px;
+    right: 50px;
+  
+    li {
+      float: left;
+      margin-right: 30px;
+    }
+  
+    i {
+      font-size: 35px;
+      color: #b9fb05;
+      opacity: 0.5;
+      transform: scale(1);
+      transition: all 0.5s;
+  
+      &:hover {
+        opacity: 1;
+        transform: scale(1.4);
+      }
+    }
+  }

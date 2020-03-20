@@ -1,16 +1,63 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
 @import url(./reset.css);
 .vid {
-  width: 100vw;
-  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
 }
 
 .vid video {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: none;
+}
+
+.txt-video {
+  width: 340px;
+  height: 280px;
+  position: fixed;
+  top: 200px;
+  right: 70px;
+}
+
+.txt-video .txt {
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  font-size: 34px;
+  font-family: play;
+  color: #bbb;
+  letter-spacing: -2px;
+}
+
+.txt-video .txt b {
+  font: bold 34px arial;
+  color: #b9fb05;
+  margin-left: 20px;
+}
+
+.txt-video .tit {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 160px;
+  color: #b9fb05;
+  font-family: 'Monoton', cursive;
+  letter-spacing: -1px;
+}
+
+.txt-video .tit em {
+  font-size: 50px;
+  font-family: play;
+  color: #fff;
 }
 
 header h1 {
@@ -196,5 +243,90 @@ aside ul li img:hover {
   opacity: 1;
 }
 
-/* contents내 썸네일 */
+.btn-ani {
+  position: fixed;
+  bottom: 30px;
+  right: -70px;
+}
+
+.btn-ani i {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  font-size: 70px;
+  color: #97e031;
+}
+
+.btn-ani i:first-child {
+  -webkit-animation: btnAni  1.5s 0s infinite;
+          animation: btnAni  1.5s 0s infinite;
+}
+
+.btn-ani i:nth-child(2) {
+  -webkit-animation: btnAni  1.5s .5s infinite;
+          animation: btnAni  1.5s .5s infinite;
+}
+
+.btn-ani i:last-child {
+  -webkit-animation: btnAni  1.5s 1s infinite;
+          animation: btnAni  1.5s 1s infinite;
+}
+
+@-webkit-keyframes btnAni {
+  0% {
+    right: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    right: 150px;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes btnAni {
+  0% {
+    right: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    right: 150px;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+footer {
+  position: fixed;
+  top: 60px;
+  right: 50px;
+}
+
+footer li {
+  float: left;
+  margin-right: 30px;
+}
+
+footer i {
+  font-size: 35px;
+  color: #b9fb05;
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer i:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
 /*# sourceMappingURL=comm.css.map */
