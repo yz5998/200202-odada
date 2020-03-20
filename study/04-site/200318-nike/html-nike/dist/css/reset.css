@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,header,main,article,footer,i {margin:0;padding:0;box-sizing:border-box;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,header,main,article,footer,i, figure {margin:0;padding:0;box-sizing:border-box;}
 fieldset,img {border:0 none}
 dl,ul,ol,menu,li {list-style:none}
 blockquote, q {quotes: none}
@@ -9,7 +9,8 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body {background:#fff}
-html,body,th,td,input,select,textarea,button {font-size:15px;line-height:1.5;font-family:'NanumSquare',"Malgun Gothic", "Apple Gothic", sans-serif;font-weight: 400;color:#333;letter-spacing: -.2px;} /* color값은 디자인가이드에 맞게사용 */
+/* 기본 폰트 설정 */
+html,body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Sen',"Malgun Gothic", "Apple Gothic", sans-serif;font-weight: 400;color:#333;letter-spacing: -.2px;} /* color값은 디자인가이드에 맞게사용 */
 a {color:#333;text-decoration:none}
 a:active, a:hover, a:focus {text-decoration:none; color: #0072bc;}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
