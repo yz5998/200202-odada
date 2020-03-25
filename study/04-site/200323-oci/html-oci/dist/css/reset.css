@@ -52,14 +52,14 @@ input[type=password] {font-family: 'Malgun Gothic';}
 /* font */
 @import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
 
-@font-face {
+/* @font-face {
  font-family: 'NanumSquare';
  font-weight: 300;
  src: url(../fonts/NanumSquareL.eot);
  src: url(../fonts/NanumSquareL.eot?#iefix) format('embedded-opentype'),
       url(../fonts/NanumSquareL.woff) format('woff'),
       url(../fonts/NanumSquareL.ttf) format('truetype');
-}
+} */
 @font-face {
  font-family: 'NanumSquare';
  font-weight: 400;
@@ -86,7 +86,7 @@ input[type=password] {font-family: 'Malgun Gothic';}
 } */
 
 /*grid-12*/
-.row::after {
+/* .row::after {
   content: "";
   clear: both;
   display: table;
@@ -95,9 +95,9 @@ input[type=password] {font-family: 'Malgun Gothic';}
 [class*="col-"] {
   float: left;
   padding: 15px;
-}
+} */
 
-.col-1 {width: 8.33%;}
+/* .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -108,6 +108,6 @@ input[type=password] {font-family: 'Malgun Gothic';}
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%;} */
 
-body {background: url(../../m.jpg) 50% 181px no-repeat;background-size: contain;}.wrap {opacity: .8}
+body {background: url(../../m.jpg) 50% 223px no-repeat;background-size: 100% auto;}.wrap {opacity: .8}
