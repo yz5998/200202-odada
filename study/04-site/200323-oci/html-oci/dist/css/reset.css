@@ -110,4 +110,4 @@ input[type=password] {font-family: 'Malgun Gothic';}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-body {background: url(../../m.jpg) 50% 0 no-repeat;background-size: cover;}.wrap {opacity: .8}
+body {background: url(../../m.jpg) 50% 181px no-repeat;background-size: contain;}.wrap {opacity: .8}
