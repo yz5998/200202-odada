@@ -334,3 +334,21 @@ header {
     color: #fff;font-size: .8rem;text-align: center;
   }
 }
+
+.sec_goto {
+  ul {
+    display: flex;flex-wrap: wrap;
+    border: 1px solid #000;
+  }
+  li {
+    width: 50%;
+    &:last-child {
+      width: 100%;
+    }
+  }
+  a {
+    display: block;
+    height: 100%;padding: 20px 0;
+    text-align: center;
+  }
+}

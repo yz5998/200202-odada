@@ -450,4 +450,28 @@ header .nav-bar.change .bar3 {
   font-size: .8rem;
   text-align: center;
 }
+
+.sec_goto ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #000;
+}
+
+.sec_goto li {
+  width: 50%;
+}
+
+.sec_goto li:last-child {
+  width: 100%;
+}
+
+.sec_goto a {
+  display: block;
+  height: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
 /*# sourceMappingURL=comm.css.map */
