@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
 @import url("./reset.css");
-@import url("./main.css");
-@import url("./contents.css");
 /* clearfix */
 header {
   position: fixed;
@@ -389,6 +387,67 @@ header .nav-bar.change .bar3 {
           align-items: center;
   height: 100%;
   color: #fff;
+  text-align: center;
+}
+
+.sec_incu {
+  padding: 20px 0;
+  background: #eef2f9;
+}
+
+.sec_incu dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sec_incu dl dt {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.sec_incu dl dd {
+  position: relative;
+  width: 27%;
+  padding: 10px 0 0 0;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.sec_incu dl dd::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 12px;
+  height: 2px;
+  background: red;
+}
+
+.sec_incu p {
+  margin-top: 30px;
+  font-size: 0.8em;
+  text-align: center;
+  color: #777;
+}
+
+.sec_incu a {
+  display: block;
+  width: 30%;
+  margin: 10px auto 0;
+  padding: 3px 0 2px;
+  background: red;
+  color: #fff;
+  font-size: .8rem;
   text-align: center;
 }
 /*# sourceMappingURL=comm.css.map */
