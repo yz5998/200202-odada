@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./dist/css/module/slick-theme.css" />  <!-- 이미지 슬라이드 테마 -->
   <link rel="stylesheet" type="text/css" href="./dist/css/comm.css">   <!-- my css -->
   <script src="./dist/js/module/jquery.min.js"></script>   <!-- 필수 jQuery -->
-  <script src="./dist/js/module/slick.min.js"></script>  <!-- 이미지 슬라이드 -->
+  <!-- <script src="./dist/js/module/slick.min.js"></script>  이미지 슬라이드 -->
   <script src="./dist/js/module/jquery.scrollUp.min.js"></script> <!-- scroll top -->
   <script src="./dist/js/comm.js"></script> <!-- my js -->
   <!-- ie9 이하 버전에서 잘 보이도록 추가 -->
@@ -43,62 +43,80 @@
             x.classList.toggle("change");
           }          
           </script>
-          <ul class="nav-depth1 hide">
-            <li>
-              <a href="#">회사소개</a>
-              <ul class="nav-depth2">
-                <li><a href="#">인사말</a></li>
-                <li><a href="#">기업 소개</a></li>
-                <li><a href="#">비전</a></li>
-                <li><a href="#">연혁</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">사업분야</a>
-              <ul class="nav-depth2">
-                <li><a href="#">Basic Chemicals</a></li>
-                <li><a href="#">Bio Businesses</a></li>
-                <li><a href="#">제품검색</a></li>
-                <li><a href="#">고객센터</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">투자정보</a>
-              <ul class="nav-depth2">
-                <li><a href="#">공시정보</a></li>
-                <li><a href="#">IR활동</a></li>
-                <li><a href="#">IR자료실</a></li>
-                <li><a href="#">추가정보</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">지속가능경영</a>
-              <ul class="nav-depth2">
-                <li><a href="#">사회공헌</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">안전/환경 경영</a></li>
-                <li><a href="#">지속가능경영보고서</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">홍보센터</a>
-              <ul class="nav-depth2">
-                <li><a href="#">뉴스</a></li>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">PR자료실</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">인재채용</a>
-              <ul class="nav-depth2">
-                <li><a href="#">채용공고</a></li>
-                <li><a href="#">인재상</a></li>
-                <li><a href="#">인재 육성</a></li>
-                <li><a href="#">채용 절차</a></li>
-                <li><a href="#">직무소개</a></li>
-              </ul>
-            </li>
-          </ul>
+          <div class="nav-wrap">
+            <a href="#" class="nav-close">
+              <i class="las la-arrow-left"></i> 
+              <span class="blind">닫기</span> 
+            </a>
+            <div class="nav-service">
+              <div class="f_l">
+                <a href="#">SITEMAP</a>
+                <a href="#">CONTACT US</a>
+              </div>
+              <div class="f_r">
+                <a href="#">KO</a>
+                <a href="#">EN</a>
+                <a href="#">CH</a>
+              </div>
+            </div>
+            <ul class="nav-depth1">
+              <li>
+                <a href="#">회사소개</a>
+                <ul class="nav-depth2">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">기업 소개</a></li>
+                  <li><a href="#">비전</a></li>
+                  <li><a href="#">연혁</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">사업분야</a>
+                <ul class="nav-depth2">
+                  <li><a href="#">Basic Chemicals</a></li>
+                  <li><a href="#">Bio Businesses</a></li>
+                  <li><a href="#">제품검색</a></li>
+                  <li><a href="#">고객센터</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">투자정보</a>
+                <ul class="nav-depth2">
+                  <li><a href="#">공시정보</a></li>
+                  <li><a href="#">IR활동</a></li>
+                  <li><a href="#">IR자료실</a></li>
+                  <li><a href="#">추가정보</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">지속가능경영</a>
+                <ul class="nav-depth2">
+                  <li><a href="#">사회공헌</a></li>
+                  <li><a href="#">윤리경영</a></li>
+                  <li><a href="#">안전/환경 경영</a></li>
+                  <li><a href="#">지속가능경영보고서</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">홍보센터</a>
+                <ul class="nav-depth2">
+                  <li><a href="#">뉴스</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">PR자료실</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">인재채용</a>
+                <ul class="nav-depth2">
+                  <li><a href="#">채용공고</a></li>
+                  <li><a href="#">인재상</a></li>
+                  <li><a href="#">인재 육성</a></li>
+                  <li><a href="#">채용 절차</a></li>
+                  <li><a href="#">직무소개</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
         </nav>
       </div>
     </header>

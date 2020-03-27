@@ -68,12 +68,74 @@ header .nav-bar.change .bar3 {
   transform: rotate(45deg) translate(-8px, -6px);
 }
 
+nav::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100vh;
+  background: #fff;
+}
+
+.nav-wrap .nav-close {
+  display: block;
+  height: 35px;
+}
+
+.nav-wrap .nav-close i {
+  margin: 4px 0 0 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-service {
+  overflow: hidden;
+  height: 35px;
+  padding: 0 2%;
+  background: #3a465c;
+}
+
+.nav-service a {
+  display: inline-block;
+  height: 35px;
+  padding: 0 3px;
+  color: #fff;
+  line-height: 35px;
+  font-size: 12px;
+}
+
+.nav-depth1 {
+  padding-top: 10px;
+}
+
+.nav-depth1 > li > a {
+  display: block;
+  height: 35px;
+  padding-left: 10px;
+  line-height: 35px;
+}
+
+.nav-depth2 {
+  display: none;
+}
+
 .slide-main {
   margin-bottom: 20px !important;
   height: 100vh;
 }
 
 .slide-main img {
+  width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
