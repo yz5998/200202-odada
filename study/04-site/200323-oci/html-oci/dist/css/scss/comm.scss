@@ -59,14 +59,14 @@ header {
 
 //nav
 nav {
-  &::before {
-    content: '';
+  .nav-bg {
+    display: none;
     position: fixed;top: 0;left: 0;bottom: 0;right: 0;
     background: rgba(0,0,0,.7);
   }
 }
 .nav-wrap {
-  position: fixed;top: 0;left: 0;
+  position: fixed;top: 0;left: -75%;
   width: 75%;height: 100vh;
   background: #fff;
   .nav-close {
@@ -92,16 +92,42 @@ nav {
 .nav-depth1 {
   padding-top: 10px;
   > li {
+    &.on .nav-depth2 {
+      display: block;
+    }
     > a {
+      position: relative;
       display: block;
       height: 35px;
       padding-left: 10px;
       line-height: 35px;
+      &::after{
+        content: "\f067";
+        position: absolute;top: 0;right: 8px;
+        font-family: 'Line Awesome Free';
+        font-weight: 900;font-size: 20px;
+      }
     }
   }
 }
 .nav-depth2 {
   display: none;
+  padding: 5px 0;
+  background: #3a465c;
+  a {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #fff;
+    &::before {
+      display: inline-block;
+      margin: -2px 5px 0;
+      vertical-align: middle;
+      font-family: 'Line Awesome Free';
+    font-weight: 900;font-size: 11px;
+    content: "\f0da";
+    }
+  }
 }
 
 

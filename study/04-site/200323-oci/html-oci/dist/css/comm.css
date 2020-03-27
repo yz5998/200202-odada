@@ -68,8 +68,8 @@ header .nav-bar.change .bar3 {
   transform: rotate(45deg) translate(-8px, -6px);
 }
 
-nav::before {
-  content: '';
+nav .nav-bg {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -81,7 +81,7 @@ nav::before {
 .nav-wrap {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -75%;
   width: 75%;
   height: 100vh;
   background: #fff;
@@ -118,15 +118,49 @@ nav::before {
   padding-top: 10px;
 }
 
+.nav-depth1 > li.on .nav-depth2 {
+  display: block;
+}
+
 .nav-depth1 > li > a {
+  position: relative;
   display: block;
   height: 35px;
   padding-left: 10px;
   line-height: 35px;
 }
 
+.nav-depth1 > li > a::after {
+  content: "\f067";
+  position: absolute;
+  top: 0;
+  right: 8px;
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+  font-size: 20px;
+}
+
 .nav-depth2 {
   display: none;
+  padding: 5px 0;
+  background: #3a465c;
+}
+
+.nav-depth2 a {
+  display: block;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.nav-depth2 a::before {
+  display: inline-block;
+  margin: -2px 5px 0;
+  vertical-align: middle;
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+  font-size: 11px;
+  content: "\f0da";
 }
 
 .slide-main {
