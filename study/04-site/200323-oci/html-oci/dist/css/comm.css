@@ -74,6 +74,7 @@ header .nav-bar.change .bar3 {
 }
 
 .slide-main img {
+  width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
@@ -132,6 +133,8 @@ header .nav-bar.change .bar3 {
 
 .slide-main .slick-slide {
   position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .slide-main .slick-slide.slick-active .txt-ani {
@@ -144,8 +147,8 @@ header .nav-bar.change .bar3 {
   top: 90%;
   left: 50%;
   opacity: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: top .5s;
+  transition: top .5s;
   width: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

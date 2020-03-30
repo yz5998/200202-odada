@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ 예제</title>
+    <style>
+        /* 992px < width */
+        /* pc */
+        body {
+            background-color: tan;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .wrap div {
+            width: 20%;
+            height: 100px;
+            background: tomato;
+        }
+
+        /* 600px < width <  992px */
+        /* tablet */
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: blue;
+            }
+            .wrap {
+                flex-wrap: wrap;
+            }
+
+            .wrap div {
+                width: 49%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* 0 < width < 600px */
+        /* mobile */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: olive;
+            }
+            .wrap div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div>1번</div>
+        <div>2번</div>
+        <div>3번</div>
+        <div>4번</div>
+    </div>
+</body>
+
+</html>
