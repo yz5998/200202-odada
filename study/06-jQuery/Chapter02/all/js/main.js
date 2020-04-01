@@ -1,7 +1,7 @@
 $(function(){
     $('#typo')
     .on('mouseenter', function(){
-        $(this).animate({
+        $(this).stop(true).animate({
             color: '#cea9e5',
             backgroundColor : '#ae5e9b',
             fontSize : '50px'
@@ -9,10 +9,10 @@ $(function(){
         $('header').css('color','#ae5e9b');
     })
     .on('mouseleave', function(){
-        $(this).animate({
-            color: '',
-            backgroundColor : '',
-            fontSize : ''
+        $(this).stop(true).animate({
+            color: '#fff',
+            backgroundColor : '#3498db',
+            fontSize : '110px'
         });
         $('header').css('color','#000');
     });
