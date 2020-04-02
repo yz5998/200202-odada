@@ -23,7 +23,7 @@ $(function(){
         $(this).find('strong').stop().animate({
             left : 0,
             opacity : 1
-        }, duration);
+        }, duration * 1.3);
         $(this).find('span').stop().animate({
             opacity : 1
         }, duration)
