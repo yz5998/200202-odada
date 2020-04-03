@@ -16,6 +16,10 @@ $(function () {
             // 윈도우의 스크롤 량을 확인하고,
             // 헤더의 기본 위치를 지나서 있으면 클래스를 부여,
             // 그렇지 않으면 삭제
+            console.log(`윈도우의 스크롤 값 : ${$window.scrollTop()}`);
+            console.log(`header의 위치 값 : ${$header.offset().top}`);
+
+
             if ($window.scrollTop() > headerOffsetTop) {
                 $header.addClass('sticky');
             } else {
