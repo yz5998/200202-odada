@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>삽입 관련 메서드</title>   
     <script src="jquery-3.3.1.min.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function() {
             $("#m1").prepend("<p>삽입1_1</p>");
             $("#m1").append("<p>삽입1_2</p>");
@@ -15,10 +15,33 @@
             $("<p>삽입2_3</p>").insertBefore("#m2");
             $("<p>삽입2_4</p>").insertAfter("#m2");
         });
-    </script>
+    </script> -->
+    <style>
+        #m1, #m2 {
+            background: lightgray;
+            text-align: center;
+        }
+        strong {
+            display: block;
+            background: tomato;
+        }
+    </style>
 </head>
 <body>
     <div id="m1"><strong>내용1</strong></div>
+    <hr>
     <div id="m2"><strong>내용2</strong></div>
+
+    <script>
+        $('#m1').prepend('<p>prepend</p>')
+        $('#m1').append('<p>append</p>')
+        $('#m1').before('<p>before</p>')
+        $('#m1').after('<p>after</p>')
+
+        $('<p>prependTo</p>').prependTo('#m2')
+        $('<p>appendTo</p>').appendTo('#m2')
+        $('<p>insertBefore</p>').insertBefore('#m2')
+        $('<p>insertAfter</p>').insertAfter('#m2')
+    </script>
 </body>
 </html>

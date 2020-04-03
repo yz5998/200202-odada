@@ -26,11 +26,18 @@
             console.log("outerHeight " + $("div").outerHeight(true));
         });
     </script> -->
-    <script>
-        $('div').width(150).height(150);
-    </script>
+    
 </head>
 <body>
     <div>내용</div>
+    <script>
+            $('div').width(150).height(150);
+            console.log(`width : ${$('div').width()}`)
+            console.log(`height : ${$('div').height()}`)
+            console.log(`height : ${$('div').innerWidth()}`)
+            console.log(`height : ${$('div').innerHeight()}`)
+            console.log(`height : ${$('div').outerWidth()}`)
+            console.log(`height : ${$('div').outerHeight()}`)
+    </script>
 </body>
 </html>

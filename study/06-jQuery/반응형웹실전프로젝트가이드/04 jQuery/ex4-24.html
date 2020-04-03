@@ -25,18 +25,24 @@
         }    
     </style>
     <script src="jquery-3.3.1.min.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function() {
             console.log($("#inner").offset().left);
             console.log($("#inner").offset().top);
             console.log($("#inner").position().left);
             console.log($("#inner").position().top);
         });
-    </script>
+    </script> -->
 </head>
 <body>
     <div id="outer">
         <div id="inner">내용</div>
     </div>
+    <script>
+        console.log(`offset().left : ${$('#inner').offset().left}`);
+        console.log(`offset().top : ${$('#inner').offset().top}`);
+        console.log(`position().left : ${$('#inner').position().left}`);
+        console.log(`position().top : ${$('#inner').position().top}`);
+    </script>
 </body>
 </html>
