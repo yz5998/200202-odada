@@ -390,11 +390,26 @@ nav .nav-bg {
 }
 
 .sec_notice .lst_notice > li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 0.9em;
 }
 
-.sec_notice .lst_notice > li span {
+.sec_notice .lst_notice > li em {
   display: block;
+  width: 100%;
+}
+
+.sec_notice .lst_notice > li span {
+  display: inline-block;
   padding: 1px 10px;
   border: 1px solid rgba(255, 255, 255, 0.7);
 }

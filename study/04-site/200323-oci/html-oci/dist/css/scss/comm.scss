@@ -15,7 +15,6 @@ header {
       background: url(../../../images/logo.png) 0 0 no-repeat;
       background-size: contain;
       text-indent: -9999px;
-      color: $mainColor;
     } 
   }
   
@@ -309,10 +308,15 @@ nav {
       margin-bottom: 25px;
       background: #eee;
       a {
+        display: flex;justify-content: center;align-content: center;flex-wrap: wrap;
         font-size: 0.9em;
       }
-      span {
+      em {
         display: block;
+        width: 100%;
+      }
+      span {
+        display: inline-block;
         padding: 1px 10px;
         border: 1px solid rgba(255,255,255,.7);
         &.btn_more {
