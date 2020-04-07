@@ -41,7 +41,12 @@ input[type=password] {font-family: 'Malgun Gothic';}
 .txt_bar {font-size:12px;color:#b6b6b6} /* 텍스트형 구분라인 */
 
 /* Background Image - common 요소 */
-.img_g {display: inline-block;overflow: hidden;background:url(../../images/comm/img-comm.png) no-repeat;vertical-align: top;} /* 이미지 */
+.img_g {
+  display: inline-block;overflow: hidden;
+  background:url(../../images/img-g.png) no-repeat;
+  vertical-align: top;
+  text-indent: -9999px;
+} /* 이미지 */
 .btn_comm {background:url() no-repeat} /* 버튼 */
 .ico_comm {background:url() no-repeat} /* 아이콘 */
 .tit_comm {background:url() no-repeat} /* 타이틀 */
