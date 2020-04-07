@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <style>
+ 
+        #wrapper {
+            width: 259px;
+            height: 300px;
+            background: skyblue;
+        }
+        .box {
+            float: left;
+            width: 30px;
+            height: 30px;
+            border:1px solid #000;
+            margin: 0 5px 5px 0;
+        }
+        /* 7, 14, 21, 28 번째 box 배경색 변경 (7의배수) */
+        .box:nth-child(7n){
+            background: red;
+        }
+        /* 22번 부터 이후 모든 box 폰트색 변경 */
+        .box:nth-child(n+22) {
+            color: blue;
+        }
+        /* 1번째 부터 4번째 까지 box 배경색 변경 */
+        .box:nth-child(-n+5) {
+            background: green;
+        }
+        /* 16번째 부터 19번째 까지 box 배경색 변경 */
+        .box:nth-child(n+16):nth-child(-n+19) {
+            background: hotpink;
+        }
+        /* 마지막에서부터 순서를 계산 */
+        /* 마지막(28)에서 부터 3번째 */
+        .box:nth-last-child(3) {
+            background: gold;
+        }
+        /*참고 : 
+        nth-last-child(n)는  마지막에서부터 순서를 계산
+        .box:nth-child(odd) { color: red; } 홀수
+        .box:nth-child(even) { color: red; } 짝수*/
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="box">1</div>   
+        <div class="box">2</div>   
+        <div class="box">3</div>   
+        <div class="box">4</div>   
+        <div class="box">5</div>   
+        <div class="box">6</div>   
+        <div class="box">7</div>   
+        <div class="box">8</div>   
+        <div class="box">9</div>   
+        <div class="box">10</div>   
+        <div class="box">11</div>   
+        <div class="box">12</div>   
+        <div class="box">13</div>   
+        <div class="box">14</div>   
+        <div class="box">15</div>   
+        <div class="box">16</div>   
+        <div class="box">17</div>   
+        <div class="box">18</div>   
+        <div class="box">19</div>   
+        <div class="box">20</div>   
+        <div class="box">21</div>   
+        <div class="box">22</div>   
+        <div class="box">23</div>   
+        <div class="box">24</div>   
+        <div class="box">25</div>   
+        <div class="box">26</div>   
+        <div class="box">28</div>   
+        <div class="box">28</div>               
+    </div>
+</body>
+</html>
