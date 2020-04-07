@@ -1,7 +1,7 @@
 $(function () {
 
     /*
-     * Sticky header
+     * Sticky header 
      */
     $('.page-header').each(function () {
 

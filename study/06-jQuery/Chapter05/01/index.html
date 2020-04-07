@@ -8,7 +8,27 @@
 <link rel="stylesheet" href="./css/main.css">
 <script src="./js/vendor/modernizr.custom.min.js"></script>
 <script src="./js/vendor/jquery-1.10.2.min.js"></script>
-<script src="./js/main.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script>
+    $(function(){
+
+        $('.slideshow').each(function(){
+
+            let $슬라이드이미지 = $(this).find('img'),
+                    슬라이드갯수 = $슬라이드이미지.length,
+                    현재슬라이드 = 0;
+
+            $슬라이드이미지.eq(0).fadeIn();
+
+            setInterval(다음슬라이드, 7500);
+
+            function 다음슬라이드() {
+                $슬라이드이미지.eq(1).fadeIn();
+            }
+
+        })
+    })
+</script>
 </head>
 <body>
 

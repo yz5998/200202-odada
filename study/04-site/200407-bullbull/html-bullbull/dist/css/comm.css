@@ -1,0 +1,37 @@
+@import url("./reset.css");
+.slide {
+  padding: 50px 0;
+  background-image: -webkit-gradient(linear, right top, left top, from(#0ccbbc), to(#305eb7));
+  background-image: linear-gradient(-90deg, #0ccbbc, #305eb7);
+}
+
+.slide .logo {
+  width: 394px;
+  height: 77px;
+  margin: auto;
+  background: url(../../../images/img-g.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
+
+.slide .btn-wrap {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.slide .btn-wrap .btn- {
+  display: inline-block;
+  height: 68px;
+  background-image: url(../../../images/img-g.png);
+  text-indent: -9999px;
+}
+
+.slide .btn-wrap .btn-.btn-google {
+  width: 224px;
+  background-position: 0 -80px;
+}
+
+.slide .btn-wrap .btn-.btn-apple {
+  width: 204px;
+  background-position: -240px -80px;
+}
+/*# sourceMappingURL=comm.css.map */
