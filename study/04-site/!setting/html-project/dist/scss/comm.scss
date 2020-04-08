@@ -1,9 +1,9 @@
 @charset "UTF-8";
+@import 'variables.scss';
+@import 'mixin.scss';
 @import url('./reset.css');
 @import url('./main.css');
 @import url('./contents.css');
-@import 'variables.scss';
-@import 'mixin.scss';
 
 // 건너뛰기
 #skipnavigation {
