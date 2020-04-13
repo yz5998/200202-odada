@@ -1,3 +1,4 @@
+/* clearfix */
 @import url("./reset.css");
 #skipnavigation a {
   position: absolute;
@@ -127,6 +128,70 @@ article:last-child {
   article {
     width: 25%;
   }
+  article:first-child {
+    width: 75%;
+  }
+  article:nth-child(2) {
+    width: 25%;
+  }
+  article:nth-child(6) {
+    width: 50%;
+  }
+  article:nth-child(7) {
+    width: 50%;
+  }
+  article:nth-child(9) {
+    width: 25%;
+  }
+  article:nth-child(10) {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  article {
+    width: 33.333%;
+  }
+  article:first-child {
+    width: 100%;
+    height: 400px;
+  }
+  article:nth-child(2) {
+    width: 66.666%;
+  }
+  article:nth-child(4) {
+    display: none;
+  }
+  article:nth-child(5) {
+    width: 33.333%;
+  }
+  article:nth-child(6) {
+    width: 66.666%;
+  }
+  article:nth-child(7) {
+    display: none;
+  }
+  article:nth-child(9) {
+    width: 33.333%;
+  }
+  article:nth-child(10) {
+    display: none;
+  }
+  article:nth-child(12) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  article {
+    width: 50%;
+  }
+  article:nth-child(2) {
+    width: 100%;
+  }
+  article:nth-child(n+3) {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 639px) {
@@ -135,6 +200,9 @@ article:last-child {
   }
   .nav-mini {
     display: none;
+  }
+  article {
+    height: 150px;
   }
 }
 
@@ -156,6 +224,13 @@ article:last-child {
     right: 0;
     bottom: 0;
     z-index: 10;
+  }
+  article:first-child {
+    width: 100vw;
+    height: 100vh;
+  }
+  article:nth-child(n+2) {
+    display: none;
   }
 }
 /*# sourceMappingURL=comm.css.map */
